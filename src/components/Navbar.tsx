@@ -1,0 +1,68 @@
+import { CircleFadingPlus, Menu, X } from 'lucide-react';
+import { Button } from './ui/button';
+import { useState } from 'react';
+
+const Navbar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    return (
+        <nav className="fixed top-0 left-0 right-0 bg-white py-4 px-6 md:px-12 lg:px-24 shadow-md z-50">
+            <div className="flex items-center justify-between">
+                {/* Logo */}
+                <a href="Home" className="flex items-center gap-2">
+                    <img
+                        src="/images/Profil.jpg"
+                        alt="Profilku"
+                        className="rounded-full border-2 border-yellow h-[40px] hover:-translate-y-1 transition duration-400"
+                    />
+                    <span className="font-semibold text-[15px] md:text-[18px] font-700 hover:text-yellow">
+                        Rafi Ardinata Riskiansyah
+                    </span>
+                </a>
+
+                {/* Mobile Menu Button */}
+                <button
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    className="lg:hidden block"
+                >
+                    {isMenuOpen ? (
+                        <X className="w-6 h-6 text-yellow" />
+                    ) : (
+                        <Menu className="w-6 h-6 text-yellow" />
+                    )}
+                </button>
+
+                {/* Menu */}
+                <div
+                    className={`${isMenuOpen ? 'block' : 'hidden'
+                        } lg:block absolute lg:static top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-md lg:shadow-none`}
+                >
+                    <ul className="flex flex-col lg:flex-row font-700 font-medium gap-4 lg:gap-10 items-center p-4 lg:p-0">
+                        <li className="hover:text-yellow">
+                            <a href="">Home</a>
+                        </li>
+                        <li className="hover:text-yellow">
+                            <a href="">Projects</a>
+                        </li>
+                        <li className="hover:text-yellow">
+                            <a href="">About Me</a>
+                        </li>
+                        <li className="hover:text-yellow">
+                            <a href="">Soon</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <Button>
+                                    <CircleFadingPlus className="w-5 text-white" />
+                                    <span>Hire Me</span>
+                                </Button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;
