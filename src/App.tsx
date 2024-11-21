@@ -5,6 +5,7 @@ import { Button } from './components/ui/button'
 import NumberTicker from './components/ui/number-ticker'
 import Gambar from './components/Gambar'
 import GradualSpacing from './components/ui/gradual-spacing'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './components/ui/tooltip'
 
 const App = () => {
   return (
@@ -84,13 +85,22 @@ const App = () => {
 
             {/* Telkom University */}
             <div className='flex items-center gap-4'>
-              <a href="https://telkomuniversity.ac.id/" target='_blank'>
-                <img
-                  src="/images/telu.png"
-                  alt="Logo Tel-U"
-                  className='hover:-translate-y-1 transition duration-400'
-                />
-              </a>
+              <TooltipProvider>
+                <Tooltip delayDuration={200}>
+                  <TooltipTrigger>
+                    <a href="https://telkomuniversity.ac.id/" target='_blank'>
+                      <img
+                        src="/images/telu.png"
+                        alt="Logo Tel-U"
+                        className='hover:-translate-y-1 transition duration-400'
+                      />
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Telkom University Surabaya</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
               <div className='font-700'>
                 <p className='font-medium'>Currently Studying in</p>
                 <p className='font-bold text-red-600'>Telkom University Surabaya</p>
@@ -100,13 +110,22 @@ const App = () => {
 
             {/* Internship */}
             <div className='flex items-center gap-4'>
-              <a href="https://telkomuniversity.ac.id/" target='_blank'>
-                <img
-                  src="/images/telu.png"
-                  alt="Logo Tel-U"
-                  className='hover:-translate-y-1 transition duration-400'
-                />
-              </a>
+              <TooltipProvider>
+                <Tooltip delayDuration={200}>
+                  <TooltipTrigger>
+                    <a href="https://telkomuniversity.ac.id/" target='_blank'>
+                      <img
+                        src="/images/telu.png"
+                        alt="Logo Tel-U"
+                        className='hover:-translate-y-1 transition duration-400'
+                      />
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Telkom University Surabaya</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
               <div className='font-700'>
                 <p className='font-medium'>Currently Internship in</p>
                 <p className='font-bold text-red-600'>Laboratory Active Talent - Deisgn Graphic</p>
@@ -116,13 +135,22 @@ const App = () => {
 
             {/* Freelance */}
             <div className='flex items-center gap-4'>
-              <a href="https://www.vecteezy.com/members/rafsacreative" target='_blank'>
-                <img
-                  src="/images/vecteezy.png"
-                  alt="Logo Tel-U"
-                  className='hover:-translate-y-1 transition duration-400'
-                />
-              </a>
+              <TooltipProvider>
+                <Tooltip delayDuration={200}>
+                  <TooltipTrigger>
+                    <a href="https://www.vecteezy.com/members/rafsacreative" target='_blank'>
+                      <img
+                        src="/images/vecteezy.png"
+                        alt="Logo Tel-U"
+                        className='hover:-translate-y-1 transition duration-400'
+                      />
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Vecteezy</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
               <div className='font-700'>
                 <p className='font-medium'>Currently Freelance in</p>
                 <p className='font-bold text-yellow'>Vecteezy Contributor - Graphic Designer</p>
