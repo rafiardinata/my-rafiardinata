@@ -14,16 +14,16 @@ const App = () => {
       <Navbar />
 
       <main className='min-h-screen flex lg:flex-row'>
-        <div className='relative lg:w-[75%] w-[100%] pl-24 pr-14 mt-[80px]'>
+        <div className='relative lg:w-[75%] w-[100%] sm:pl-24 sm:pr-14 px-8 mt-[40px]'>
           <div className='flex justify-between items-end'>
-            <div className='flex flex-col'>
+            <div className='flex flex-col w-full'>
               <div className='flex flex-col mt-16 gap-0'>
-                <h1 className='xl:text-[130px] text-[80px] font-700 font-bold text-yellow leading-none'>
+                <h1 className='xl:text-[130px] sm:text-[80px] text-[40px] font-700 font-bold text-yellow leading-none'>
                   Hi, I&apos;m Rafi
                 </h1>
                 <GradualSpacing
                   texts={["Front End Developer", "Graphic Designer", "UI/UX Designer"]}
-                  className='text-[30px] lg:text-[50px] font-700 font-bold text-abu'
+                  className='text-[20px] sm:text-[30px] md:text-[50px] font-700 font-bold text-abu'
                   duration={0.5}
                   delayMultiple={0.04}
                   switchInterval={3000} // Interval 3 detik sebelum berpindah ke kata berikutnya
@@ -33,24 +33,24 @@ const App = () => {
 
               {/* Let's Work Together GROUP */}
               <div className='mt-8'>
-                <p className='text-[30px] text-abu font-500 font-semibold'>
+                <p className='sm:text-[30px] text-[25px] text-abu font-500 font-semibold'>
                   Let&apos;s Work Together
                 </p>
-                <p className='text-[#707070] font-500 font-normal'>
+                <p className='text-[#707070] font-500 font-normal sm:text-[16px] text-[11px]'>
                   Creating user experience and visual appealing design
                 </p>
-                <div className='flex mt-5 gap-5'>
+                <div className='flex flex-row mt-5 gap-5'>
                   <Button>
                     <CircleFadingPlus className="w-5 text-white" />
-                    <span>Hire Me</span>
+                    <span className='text-[11px]'>Hire Me</span>
                   </Button>
                   <Button variant="outline">
                     <FileDown className="w-5 text-black" />
-                    <span>Download CV</span>
+                    <span className='text-[11px]'>Download CV</span>
                   </Button>
                   <Button variant="outline">
                     <PanelsTopLeft className="w-5 text-black" />
-                    <span>Projects</span>
+                    <span className='text-[11px]'>Projects</span>
                   </Button>
                 </div>
               </div>
