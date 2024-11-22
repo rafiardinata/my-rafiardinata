@@ -21,7 +21,7 @@ export default {
         abu: '#323232',
         primary: '#E9E9E9',
         secondary: '#707070'
-      }
+      },
   	},
   },
   plugins: [require("tailwindcss-animate")],

@@ -13,9 +13,9 @@ const Navbar = () => {
                     <img
                         src="/images/Profil.jpg"
                         alt="Profilku"
-                        className="rounded-full border-2 border-yellow h-[40px] hover:-translate-y-1 transition duration-400"
+                        className="rounded-full sm:h-[40px] border-2 border-yellow h-[30px] hover:-translate-y-1 transition duration-400"
                     />
-                    <span className="font-semibold text-[15px] md:text-[18px] font-700 hover:text-yellow">
+                    <span className="font-semibold text-[12px] sm:text-[18px] font-700 hover:text-yellow">
                         Rafi Ardinata Riskiansyah
                     </span>
                 </a>
