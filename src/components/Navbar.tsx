@@ -42,13 +42,13 @@ const Navbar = () => {
                             <a href="">Home</a>
                         </li>
                         <li className="hover:text-yellow">
+                            <a href="">Services</a>
+                        </li>
+                        <li className="hover:text-yellow">
                             <a href="">Projects</a>
                         </li>
                         <li className="hover:text-yellow">
                             <a href="">About Me</a>
-                        </li>
-                        <li className="hover:text-yellow">
-                            <a href="">Soon</a>
                         </li>
                         <li>
                             <a href="">
