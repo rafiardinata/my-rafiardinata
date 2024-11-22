@@ -14,11 +14,11 @@ const App = () => {
       <Navbar />
 
       <main className='min-h-screen flex lg:flex-row'>
-        <div className='relative lg:w-[75%] w-[100%] sm:pl-24 sm:pr-14 px-8 mt-[40px]'>
+        <div className='relative lg:w-[75%] w-[100%] sm:pl-24 sm:pr-14 px-8 sm:mt-[80px] mt-[40px]'>
           <div className='flex justify-between items-end'>
             <div className='flex flex-col w-full'>
               <div className='flex flex-col mt-16 gap-0'>
-                <h1 className='xl:text-[130px] sm:text-[80px] text-[40px] font-700 font-bold text-yellow leading-none'>
+                <h1 className='xl:text-[130px] sm:text-[80px] text-[50px] font-700 font-bold text-yellow leading-none'>
                   Hi, I&apos;m Rafi
                 </h1>
                 <GradualSpacing
@@ -32,7 +32,7 @@ const App = () => {
               </div>
 
               {/* Let's Work Together GROUP */}
-              <div className='mt-8'>
+              <div className='sm:mt-8 mt-5'>
                 <p className='sm:text-[30px] text-[25px] text-abu font-500 font-semibold'>
                   Let&apos;s Work Together
                 </p>
@@ -58,19 +58,19 @@ const App = () => {
               {/* Counter */}
               <div className='mt-8 flex text-center md:gap-5'>
                 <div className='font-700 font-semibold w-28'>
-                  <NumberTicker value={6} className='lg:text-[35px] text-[25px]' />
-                  <span className='lg:text-[35px] text-[25px]'>+</span>
-                  <p className='text-secondary'>My Projects Done</p>
+                  <NumberTicker value={6} className='lg:text-[35px] text-[20px]' />
+                  <span className='lg:text-[35px] text-[20px]'>+</span>
+                  <p className='text-secondary sm:text-[16px] text-[10px]'>My Projects Done</p>
                 </div>
                 <div className='font-700 font-semibold w-64'>
-                  <NumberTicker value={6} className='lg:text-[35px] text-[25px]' />
-                  <span className='lg:text-[35px] text-[25px]'>+</span>
-                  <p className='text-secondary'>Completed Licenses & Certifications</p>
+                  <NumberTicker value={6} className='lg:text-[35px] text-[20px]' />
+                  <span className='lg:text-[35px] text-[20px]'>+</span>
+                  <p className='text-secondary sm:text-[16px] text-[10px]'>Completed Licenses & Certifications</p>
                 </div>
                 <div className='font-700 font-semibold w-28'>
-                  <NumberTicker value={2} className='lg:text-[35px] text-[25px]' />
-                  <span className='lg:text-[35px] text-[25px]'>+</span>
-                  <p className='text-secondary'>Years Experience</p>
+                  <NumberTicker value={2} className='lg:text-[35px] text-[20px]' />
+                  <span className='lg:text-[35px] text-[20px]'>+</span>
+                  <p className='text-secondary sm:text-[16px] text-[10px]'>Years Experience</p>
                 </div>
               </div>
             </div>
@@ -81,8 +81,7 @@ const App = () => {
             </div>
           </div>
 
-          <div className='mt-11 flex flex-wrap items-center gap-[40px] lg:mb-0 mb-8'>
-
+          <div className='mt-11 flex flex-wrap sm:gap-[40px] gap-[25px] lg:mb-0 mb-8'>
             {/* Telkom University */}
             <div className='flex items-center gap-4'>
               <TooltipProvider>
@@ -92,7 +91,7 @@ const App = () => {
                       <img
                         src="/images/telu.png"
                         alt="Logo Tel-U"
-                        className='hover:-translate-y-1 transition duration-400'
+                        className='hover:-translate-y-1 transition duration-400 sm:w-full w-[29px]'
                       />
                     </a>
                   </TooltipTrigger>
@@ -101,7 +100,7 @@ const App = () => {
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
-              <div className='font-700'>
+              <div className='font-700 sm:text-[16px] text-[12px]'>
                 <p className='font-medium'>Currently Studying in</p>
                 <p className='font-bold text-red-600'>Telkom University Surabaya</p>
                 <p className='text-secondary font-medium'>Feb 2021 - Present | Grade: 3.85</p>
@@ -113,11 +112,11 @@ const App = () => {
               <TooltipProvider>
                 <Tooltip delayDuration={200}>
                   <TooltipTrigger>
-                    <a href="https://telkomuniversity.ac.id/" target='_blank'>
+                  <a href="https://telkomuniversity.ac.id/" target='_blank'>
                       <img
                         src="/images/telu.png"
                         alt="Logo Tel-U"
-                        className='hover:-translate-y-1 transition duration-400'
+                        className='hover:-translate-y-1 transition duration-400 sm:w-full w-[30px]'
                       />
                     </a>
                   </TooltipTrigger>
@@ -126,7 +125,7 @@ const App = () => {
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
-              <div className='font-700'>
+              <div className='font-700 sm:text-[16px] text-[12px]'>
                 <p className='font-medium'>Currently Internship in</p>
                 <p className='font-bold text-red-600'>Laboratory Active Talent - Deisgn Graphic</p>
                 <p className='text-secondary font-medium'>Position in Front End Developer</p>
@@ -142,7 +141,7 @@ const App = () => {
                       <img
                         src="/images/vecteezy.png"
                         alt="Logo Tel-U"
-                        className='hover:-translate-y-1 transition duration-400'
+                        className='hover:-translate-y-1 transition duration-400 sm:w-full w-[30px]'
                       />
                     </a>
                   </TooltipTrigger>
@@ -151,7 +150,7 @@ const App = () => {
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
-              <div className='font-700'>
+              <div className='font-700 sm:text-[16px] text-[12px]'>
                 <p className='font-medium'>Currently Freelance in</p>
                 <p className='font-bold text-yellow'>Vecteezy Contributor - Graphic Designer</p>
                 <p className='text-secondary font-medium'>Jul 2024 - Present</p>
