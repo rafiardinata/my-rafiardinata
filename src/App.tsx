@@ -135,7 +135,7 @@ const App = () => {
               </TooltipProvider>
               <div className='font-700 sm:text-[16px] text-[12px]'>
                 <p className='font-medium'>Currently Internship in</p>
-                <p className='font-bold text-red-600'>Laboratory Active Talent - Deisgn Graphic</p>
+                <p className='font-bold text-red-600'>Laboratory Active Talent - Design Graphic</p>
                 <p className='text-secondary font-medium'>Position in Front End Developer</p>
               </div>
             </div>
