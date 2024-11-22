@@ -14,7 +14,7 @@ const App = () => {
       <Navbar />
 
       <main className='min-h-screen flex lg:flex-row'>
-        <div className='relative lg:w-[75%] w-[100%] sm:pl-24 sm:pr-14 px-8 sm:mt-[80px] mt-[40px]'>
+        <div className='relative lg:w-[75%] w-[100%] sm:pl-24 sm:pr-14 px-8 lg:mt-[70px] xl:mt-[50px] 2xl:mt-[60px] mt-[40px]'>
           <div className='flex justify-between items-end'>
             <div className='flex flex-col w-full'>
               <div className='flex flex-col mt-16 gap-0'>
@@ -81,7 +81,7 @@ const App = () => {
             </div>
           </div>
 
-          <div className='mt-11 flex flex-wrap sm:gap-[40px] gap-[25px] lg:mb-0 mb-8'>
+          <div className='mt-11 flex flex-wrap sm:gap-[40px] gap-[25px] lg:mb-[100px] xl:mb-0 mb-8'>
             {/* Telkom University */}
             <div className='flex items-center gap-4'>
               <TooltipProvider>
@@ -91,7 +91,7 @@ const App = () => {
                       <img
                         src="/images/telu.png"
                         alt="Logo Tel-U"
-                        className='hover:-translate-y-1 transition duration-400 sm:w-full w-[29px]'
+                        className='hover:-translate-y-1 transition duration-400 w-[30px]'
                       />
                     </a>
                   </TooltipTrigger>
@@ -112,11 +112,11 @@ const App = () => {
               <TooltipProvider>
                 <Tooltip delayDuration={200}>
                   <TooltipTrigger>
-                  <a href="https://telkomuniversity.ac.id/" target='_blank'>
+                    <a href="https://telkomuniversity.ac.id/" target='_blank'>
                       <img
                         src="/images/telu.png"
                         alt="Logo Tel-U"
-                        className='hover:-translate-y-1 transition duration-400 sm:w-full w-[30px]'
+                        className='hover:-translate-y-1 transition duration-400 w-[30px]'
                       />
                     </a>
                   </TooltipTrigger>
@@ -141,7 +141,7 @@ const App = () => {
                       <img
                         src="/images/vecteezy.png"
                         alt="Logo Tel-U"
-                        className='hover:-translate-y-1 transition duration-400 sm:w-full w-[30px]'
+                        className='hover:-translate-y-1 transition duration-400 w-[30px]'
                       />
                     </a>
                   </TooltipTrigger>

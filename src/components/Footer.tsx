@@ -22,7 +22,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <div className="text-white font-700 font-semibold sm:text-[16px] text-[9px]">
+                <div className="text-white font-700 font-semibold sm:text-[16px] text-[9px] pr-1">
                     &copy; Rafi Ardinata Riskiansyah
                 </div>
             </div>
