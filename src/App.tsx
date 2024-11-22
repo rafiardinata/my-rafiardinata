@@ -8,6 +8,7 @@ import GradualSpacing from './components/ui/gradual-spacing'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './components/ui/tooltip'
 
 const App = () => {
+
   return (
     <>
       {/* Navbar */}
@@ -40,14 +41,21 @@ const App = () => {
                   Creating user experience and visual appealing design
                 </p>
                 <div className='flex mt-5 sm:gap-5 gap-2'>
-                  <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2 border-2 rounded-lg'>
-                    <CircleFadingPlus className="w-5 text-white" />
-                    <span className='text-[11px]'>Hire Me</span>
-                  </Button>
-                  <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
-                    <FileDown className="w-5 text-black" />
-                    <span className='text-[11px]'>Download CV</span>
-                  </Button>
+                  <a href="https://wa.me/081252896841" target='_blank'>
+                    <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2 border-2 rounded-lg'>
+                      <CircleFadingPlus className="w-5 text-white" />
+                      <span className='text-[11px]'>Hire Me</span>
+                    </Button>
+                  </a>
+                  <a
+                    href="/CV-New-Rafi Ardinata Riskiansyah.pdf"
+                    download="CV-Rafi Ardinata Riskiansyah.pdf"
+                  >
+                    <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
+                      <FileDown className="w-5 text-black" />
+                      <span className='text-[11px]'>Download CV</span>
+                    </Button>
+                  </a>
                   <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
                     <PanelsTopLeft className="w-5 text-black" />
                     <span className='text-[11px]'>Projects</span>
@@ -62,7 +70,7 @@ const App = () => {
                   <span className='lg:text-[35px] text-[20px]'>+</span>
                   <p className='text-secondary sm:text-[16px] text-[10px]'>My Projects Done</p>
                 </div>
-                <div className='font-700 font-semibold w-64'>
+                <div className='font-700 font-semibold sm:w-64 w-40'>
                   <NumberTicker value={6} className='lg:text-[35px] text-[20px]' />
                   <span className='lg:text-[35px] text-[20px]'>+</span>
                   <p className='text-secondary sm:text-[16px] text-[10px]'>Completed Licenses & Certifications</p>
