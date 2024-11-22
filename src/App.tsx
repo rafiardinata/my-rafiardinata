@@ -39,16 +39,16 @@ const App = () => {
                 <p className='text-[#707070] font-500 font-normal sm:text-[16px] text-[11px]'>
                   Creating user experience and visual appealing design
                 </p>
-                <div className='flex flex-row mt-5 gap-5'>
-                  <Button>
+                <div className='flex mt-5 sm:gap-5 gap-2'>
+                  <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2 border-2 rounded-lg'>
                     <CircleFadingPlus className="w-5 text-white" />
                     <span className='text-[11px]'>Hire Me</span>
                   </Button>
-                  <Button variant="outline">
+                  <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
                     <FileDown className="w-5 text-black" />
                     <span className='text-[11px]'>Download CV</span>
                   </Button>
-                  <Button variant="outline">
+                  <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
                     <PanelsTopLeft className="w-5 text-black" />
                     <span className='text-[11px]'>Projects</span>
                   </Button>
