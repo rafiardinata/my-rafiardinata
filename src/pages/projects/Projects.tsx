@@ -9,7 +9,7 @@ const Projects = () => {
         <>
             <Navbar />
             <main className='min-h-screen absolute w-full'>
-                <header className='flex flex-col font-700 justify-center items-center mt-[150px]'>
+                <header className='flex flex-col font-700 justify-center items-center mt-[100px]'>
                     <WordPullUp
                         className="text-[56px] font-bold -tracking-widest text-yellow dark:text-white sm:text-[75px]"
                         words="Project"
