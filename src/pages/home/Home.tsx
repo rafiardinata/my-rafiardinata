@@ -7,6 +7,7 @@ import GradualSpacing from '@/components/ui/gradual-spacing'
 import NumberTicker from '@/components/ui/number-ticker'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { CircleFadingPlus, FileDown, PanelsTopLeft } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -56,12 +57,12 @@ const Home = () => {
                                             <span className='text-[11px] sm:text-[16px]'>Download CV</span>
                                         </Button>
                                     </a>
-                                    <a href="/projects">
+                                    <Link to="/projects">
                                         <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
                                             <PanelsTopLeft className="w-5 text-black" />
                                             <span className='text-[11px] sm:text-[16px]'>Projects</span>
                                         </Button>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
