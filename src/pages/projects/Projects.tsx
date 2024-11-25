@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import transition from '@/components/Transition'
 import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card'
 import WordPullUp from '@/components/ui/word-pull-up'
 
@@ -97,7 +98,7 @@ const Projects = () => {
                                     target="__blank"
                                     className="px-4 py-2 font-700 text-[12px] sm:text-[13px] sm:rounded-xl rounded-md bg-black dark:bg-white dark:text-black text-white font-bold"
                                 >
-                                    Visit Website 
+                                    Visit Website SOON
                                 </CardItem>
                                 <CardItem
                                     translateZ={20}
@@ -230,4 +231,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default transition(Projects);

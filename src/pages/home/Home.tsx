@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer'
 import Gambar from '@/components/Gambar'
 import Navbar from '@/components/Navbar'
+import transition from '@/components/Transition'
 import { Button } from '@/components/ui/button'
 import GradualSpacing from '@/components/ui/gradual-spacing'
 import NumberTicker from '@/components/ui/number-ticker'
@@ -41,9 +42,9 @@ const Home = () => {
                                 </p>
                                 <div className='flex mt-5 sm:gap-5 gap-2'>
                                     <a href="https://wa.me/081252896841" target='__blank'>
-                                        <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2 border-2 rounded-lg'>
+                                        <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2 border-2 sm:border-none rounded-lg'>
                                             <CircleFadingPlus className="w-5 text-white" />
-                                            <span className='text-[11px]'>Hire Me</span>
+                                            <span className='text-[11px] sm:text-[16px]'>Hire Me</span>
                                         </Button>
                                     </a>
                                     <a
@@ -52,13 +53,15 @@ const Home = () => {
                                     >
                                         <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
                                             <FileDown className="w-5 text-black" />
-                                            <span className='text-[11px]'>Download CV</span>
+                                            <span className='text-[11px] sm:text-[16px]'>Download CV</span>
                                         </Button>
                                     </a>
-                                    <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
-                                        <PanelsTopLeft className="w-5 text-black" />
-                                        <span className='text-[11px]'>Projects</span>
-                                    </Button>
+                                    <a href="/projects">
+                                        <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
+                                            <PanelsTopLeft className="w-5 text-black" />
+                                            <span className='text-[11px] sm:text-[16px]'>Projects</span>
+                                        </Button>
+                                    </a>
                                 </div>
                             </div>
 
@@ -199,4 +202,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default transition(Home);
