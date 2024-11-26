@@ -14,11 +14,11 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 bg-white py-4 px-6 md:px-12 lg:px-24 shadow-md z-50">
             <div className="flex items-center justify-between">
                 {/* Logo */}
-                <a href="/" className="flex items-center gap-2">
+                <a href="/" className="flex items-center gap-3">
                     <img
-                        src="/images/Profil.jpg"
+                        src="/images/LogoRafi.png"
                         alt="Profilku"
-                        className="rounded-full sm:h-[40px] border-2 border-yellow h-[30px] hover:-translate-y-1 transition duration-400"
+                        className="sm:h-[40px] h-[30px] hover:-translate-y-1 transition duration-400"
                     />
                     <span className="font-semibold text-[12px] sm:text-[18px] font-700 hover:text-yellow transition-all delay-50">
                         Rafi Ardinata Riskiansyah
