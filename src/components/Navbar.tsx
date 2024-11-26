@@ -52,8 +52,8 @@ const Navbar = () => {
                         <li className={`hover:text-yellow transition-all delay-50 ${isActive('/projects') ? 'text-yellow' : ''}`}>
                             <Link to="/projects">Projects</Link>
                         </li>
-                        <li className={`hover:text-yellow pointer-events-none opacity-25 transition-all delay-75 ${isActive('/about') ? 'text-yellow' : ''}`}>
-                            <Link to="/about">About Me</Link>
+                        <li className={`hover:text-yellow transition-all delay-75 ${isActive('/about') ? 'text-yellow' : ''}`}>
+                            <Link to="/about">About</Link>
                         </li>
                         <li>
                             <a href="https://wa.me/081252896841" target='__blank'>
