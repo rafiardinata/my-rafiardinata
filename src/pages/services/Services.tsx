@@ -1,6 +1,12 @@
 import Navbar from '@/components/Navbar'
+import { useEffect } from 'react';
 
 const Services = () => {
+
+    useEffect(() =>{
+        document.title = "RAR | Services";
+    })
+    
     return (
         <>
             <Navbar />

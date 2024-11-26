@@ -3,8 +3,13 @@ import Navbar from '@/components/Navbar'
 import transition from '@/components/Transition'
 import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card'
 import WordPullUp from '@/components/ui/word-pull-up'
+import { useEffect } from 'react'
 
 const Projects = () => {
+
+    useEffect(() =>{
+        document.title = "RAR | Projects";
+    })
 
     return (
         <>
@@ -224,6 +229,7 @@ const Projects = () => {
                             </div>
                         </CardBody>
                     </CardContainer>
+                    
                 </div>
                 <Footer />
             </main>
