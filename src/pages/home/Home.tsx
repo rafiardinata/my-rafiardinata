@@ -6,10 +6,17 @@ import { Button } from '@/components/ui/button'
 import GradualSpacing from '@/components/ui/gradual-spacing'
 import NumberTicker from '@/components/ui/number-ticker'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { AnimatePresence } from 'framer-motion'
 import { CircleFadingPlus, FileDown, PanelsTopLeft } from 'lucide-react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
+
+    useEffect(() => {
+        document.title = "Rafi Ardinata Riskiansyah";
+    })
+
     return (
         <>
             {/* Navbar */}
