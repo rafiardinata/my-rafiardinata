@@ -229,6 +229,62 @@ const Projects = () => {
                             </div>
                         </CardBody>
                     </CardContainer>
+
+                    {/* Logo Rafi */}
+                    <CardContainer className="inter-var">
+                        <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                            <CardItem
+                                translateZ="50"
+                                className="sm:text-xl font-700 text-[12px] font-bold text-neutral-600 dark:text-white"
+                            >
+                                RAR Logo
+                            </CardItem>
+                            <CardItem
+                                as="p"
+                                translateZ="60"
+                                className="text-neutral-500 font-700 text-[10px] sm:text-sm max-w-sm mt-2 dark:text-neutral-300"
+                            >
+                                Personal Project
+                            </CardItem>
+                            <CardItem translateZ="100" className="w-full mt-4">
+                                <img
+                                    src="/images/project4.jpg"
+                                    height="1000"
+                                    width="1000"
+                                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                                    alt="thumbnail"
+                                />
+                            </CardItem>
+                            <div className='flex flex-wrap justify-start items-center mt-8 text-[13px] font-700 font-medium gap-3 mb-24'>
+                                <CardItem
+                                    translateZ={20}
+                                    className="sm:px-4 sm:py-2 px-2 py-1 sm:rounded-lg rounded-md bg-yellow bg-opacity-50 group-hover/card:shadow-md"
+                                >
+                                    Figma
+                                </CardItem>
+                            </div>
+                            <div className="flex justify-between items-center mt-auto">
+                                <CardItem
+                                    translateZ={20}
+                                    as="a"
+                                    href=""
+                                    target="__blank"
+                                    className="px-4 py-2 text-[12px] font-700 sm:text-[13px] sm:rounded-xl rounded-md bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                                >
+                                    Preview Image 'Coming Soon'
+                                </CardItem>
+                                {/* <CardItem
+                                    translateZ={20}
+                                    as={"a"}
+                                    href="https://github.com/DanarWijanarko/silab-dashboard"
+                                    target="__blank"
+                                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white hover:underline"
+                                >
+                                    GitHub →
+                                </CardItem> */}
+                            </div>
+                        </CardBody>
+                    </CardContainer>
                     
                 </div>
                 <Footer />
