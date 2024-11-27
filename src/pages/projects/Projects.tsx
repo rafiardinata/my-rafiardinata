@@ -16,7 +16,7 @@ const Projects = () => {
             gambar: "/images/project1.png",
             title_visit: "Visit Website | Soon",
             title_visit_git: "GitHub",
-            web_link: "dasdas",
+            web_link: "",
             git_link: "",
             tag: [
                 "Laravel",
@@ -67,6 +67,21 @@ const Projects = () => {
                 "Figma",
             ]
         },
+
+        {
+            title: "IDCamp 2024",
+            deskripsi: "Personal Project",
+            gambar: "/images/project5.png",
+            title_visit: "Visit Website | Soon",
+            title_visit_git: "GitHub",
+            web_link: "",
+            git_link: "https://github.com/rafiardinata/IDCamp-Basic",
+            tag: [
+                "HTML",
+                "CSS",
+                "Javascript",
+            ]
+        },
     ]
 
     useEffect(() => {
@@ -80,7 +95,7 @@ const Projects = () => {
             <main className='min-h-screen absolute w-full'>
                 <header className='flex flex-col font-700 justify-center items-center mt-[100px]'>
                     <WordPullUp
-                        className="text-[56px] font-bold -tracking-widest text-yellow dark:text-white sm:text-[75px]"
+                        className="text-[56px] font-bold -tracking-widest text-yellow dark:text-white sm:text-[65px]"
                         words="Project"
                     />
                     <p className='mt-[10px] font-semibold px-8 sm:px-0 text-center'>
@@ -131,7 +146,7 @@ const Projects = () => {
                                     >
                                         {value.title_visit}
                                     </CardItem>
-                                    {value.title_visit_git && (
+                                    {value.git_link && (
                                         <CardItem
                                             translateZ={20}
                                             as={"a"}
