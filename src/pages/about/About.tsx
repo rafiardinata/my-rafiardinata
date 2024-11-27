@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import transition from '@/components/Transition'
+// import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import GradualSpacing from '@/components/ui/gradual-spacing'
@@ -13,9 +14,6 @@ import { Link } from 'react-router-dom'
 
 const About = () => {
 
-    useEffect(() => {
-        document.title = "RAR | About";
-    })
 
     const data = [
         { src: "/icon/laravel.png", name: "Laravel", link: "https://laravel.com/" },
@@ -25,20 +23,24 @@ const About = () => {
         { src: "/icon/Figma.png", name: "Figma", link: "https://www.figma.com/" },
     ]
 
+    useEffect(() => {
+        document.title = "RAR | About";
+    })
+
     return (
         <>
             <Navbar />
             <main className='min-h-screen absolute w-full px-6'>
                 <header className='flex flex-col font-700 justify-center items-center mt-[100px]'>
                     <WordPullUp
-                        className="text-[56px] font-bold -tracking-widest text-yellow dark:text-white sm:text-[75px]"
+                        className="text-[56px] font-bold -tracking-widest text-yellow dark:text-white sm:text-[65px]"
                         words="About Me"
                     />
                     <p className='mt-[10px] font-semibold px-8 sm:px-0 text-center text-abu'>
                         Learn more about me and my journey in technology.
                     </p>
                 </header>
-                <div className='flex flex-wrap mt-[40px] mb-[90px] gap-[65px] justify-center items-center sm:px-0 px-2'>
+                <div className='flex flex-wrap mt-[40px] mb-[55px] gap-[65px] justify-center items-center sm:px-0 px-2'>
                     <div>
                         <img
                             src="/images/about.png"
@@ -109,6 +111,43 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* <div className='flex flex-col justify-center items-center mb-[130px]'>
+                    <div className='font-700 font-bold text-[35px] mb-[40px] text-abu'>
+                        <h1>
+                            Companies I've Contributed To
+                        </h1>
+                    </div>
+                    <div className='flex flex-wrap justify-center gap-8'>
+                        <CardContainer>
+                            <CardBody className="bg-gray-50 relative flex flex-col justify-between group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-full rounded-xl p-6 border">
+                                <CardItem translateZ="100" className="w-full mt-4">
+                                    <img
+                                        src="/images/logoIT.png"
+                                        height="1000"
+                                        width="1000"
+                                        className="h-30 w-full object-cover rounded-xl group-hover/card:shadow-xl grayscale hover:grayscale-0 opacity-50 hover:opacity-100"
+                                        alt="thumbnail"
+                                    />
+                                </CardItem>
+                            </CardBody>
+                        </CardContainer>
+
+                        <CardContainer>
+                            <CardBody className="bg-gray-50 relative flex flex-col justify-between group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-full rounded-xl p-6 border">
+                                <CardItem translateZ="100" className="w-full mt-4">
+                                    <img
+                                        src="/images/logoIT.png"
+                                        height="1000"
+                                        width="1000"
+                                        className="h-30 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                                        alt="thumbnail"
+                                    />
+                                </CardItem>
+                            </CardBody>
+                        </CardContainer>
+                    </div>
+                </div> */}
 
                 <Footer />
             </main>
