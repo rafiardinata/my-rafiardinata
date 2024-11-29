@@ -1,7 +1,7 @@
-import About from "@/pages/about/About";
-import Home from "@/pages/home/Home";
-import Projects from "@/pages/projects/Projects";
-import Services from "@/pages/services/Services";
+import About from "@/pages/about/About.tsx";
+import Home from "@/pages/home/Home.tsx";
+import Projects from "@/pages/projects/Projects.tsx";
+import Services from "@/pages/services/Services.tsx";
 import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
