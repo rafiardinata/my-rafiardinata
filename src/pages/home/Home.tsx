@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
 import Gambar from '@/components/Gambar'
+import Loading from '@/components/Loading'
 import Navbar from '@/components/Navbar'
 import transition from '@/components/Transition'
 import { Button } from '@/components/ui/button'
@@ -16,7 +17,7 @@ const Home = () => {
         document.title = "Rafi Ardinata Riskiansyah";
     })
 
-    return (
+    return (    
         <>
             {/* Navbar */}
             <Navbar />
