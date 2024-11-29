@@ -1,6 +1,5 @@
 import Footer from '@/components/Footer'
 import Gambar from '@/components/Gambar'
-import Loading from '@/components/Loading'
 import Navbar from '@/components/Navbar'
 import transition from '@/components/Transition'
 import { Button } from '@/components/ui/button'
