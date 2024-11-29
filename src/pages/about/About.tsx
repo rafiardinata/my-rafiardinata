@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import transition from '@/components/Transition'
-// import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card'
+import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import GradualSpacing from '@/components/ui/gradual-spacing'
@@ -10,7 +10,6 @@ import WordPullUp from '@/components/ui/word-pull-up'
 import { FileDown, Fullscreen, GithubIcon } from 'lucide-react'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-
 
 const About = () => {
 
@@ -112,42 +111,28 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* <div className='flex flex-col justify-center items-center mb-[130px]'>
+                <div className='flex flex-col justify-center items-center mb-[130px]'>
                     <div className='font-700 font-bold text-[35px] mb-[40px] text-abu'>
                         <h1>
                             Companies I've Contributed To
                         </h1>
                     </div>
                     <div className='flex flex-wrap justify-center gap-8'>
-                        <CardContainer>
+                        <CardContainer className='h-full'>
                             <CardBody className="bg-gray-50 relative flex flex-col justify-between group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-full rounded-xl p-6 border">
-                                <CardItem translateZ="100" className="w-full mt-4">
+                                <CardItem translateZ="100" className="w-full grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
                                     <img
-                                        src="/images/logoIT.png"
-                                        height="1000"
-                                        width="1000"
-                                        className="h-30 w-full object-cover rounded-xl group-hover/card:shadow-xl grayscale hover:grayscale-0 opacity-50 hover:opacity-100"
-                                        alt="thumbnail"
-                                    />
-                                </CardItem>
-                            </CardBody>
-                        </CardContainer>
-
-                        <CardContainer>
-                            <CardBody className="bg-gray-50 relative flex flex-col justify-between group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-full rounded-xl p-6 border">
-                                <CardItem translateZ="100" className="w-full mt-4">
-                                    <img
-                                        src="/images/logoIT.png"
-                                        height="1000"
-                                        width="1000"
-                                        className="h-30 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                                        src="/images/Telusby.png"
+                                        height="600"
+                                        width="600"
+                                        className="w-full object-cover rounded-xl group-hover/card:shadow-xl"
                                         alt="thumbnail"
                                     />
                                 </CardItem>
                             </CardBody>
                         </CardContainer>
                     </div>
-                </div> */}
+                </div>
 
                 <Footer />
             </main>

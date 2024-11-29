@@ -10,6 +10,7 @@ export const router = createBrowserRouter([
     { path: "/services", element: <Services /> },
     { path: "/about", element: <About /> },
 ], {
+    basename: "/app",
     future: {
         v7_relativeSplatPath: true,
         v7_fetcherPersist: true,
