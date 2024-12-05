@@ -32,11 +32,11 @@ const About = () => {
             <main className='min-h-screen absolute w-full px-6'>
                 <header className='flex flex-col font-700 justify-center items-center mt-[100px]'>
                     <WordPullUp
-                        className="text-[56px] font-bold -tracking-widest text-yellow dark:text-white sm:text-[65px]"
+                        className="text-[50px] font-bold -tracking-widest text-yellow dark:text-white sm:text-[65px]"
                         words="About Me"
                     />
-                    <p className='mt-[10px] font-semibold px-8 sm:px-0 text-center text-abu'>
-                        Learn more about me and my journey in technology.
+                    <p className='mt-[10px] sm:text-[16px] text-[14px] font-semibold px-8 sm:px-0 text-center text-abu'>
+                        Learn more about me and my journey in technology
                     </p>
                 </header>
                 <div className='flex flex-wrap mt-[40px] mb-[55px] gap-[65px] justify-center items-center sm:px-0 px-2'>
@@ -48,12 +48,12 @@ const About = () => {
                         />
                     </div>
                     <div className='flex flex-col md:justify-start md:items-start justify-center items-center'>
-                        <h1 className='font-700 font-bold lg:text-[40px] md:text-[25px] text-[20px] text-yellow'>
+                        <h1 className='font-700 font-bold lg:text-[40px] sm:text-[25px] text-[18px] text-yellow'>
                             Rafi Ardinata Riskiansyah
                         </h1>
                         <GradualSpacing
                             texts={["Front End Developer", "Graphic Designer", "UI/UX Designer"]}
-                            className='text-[20px] lg:text-[30px] font-700 font-bold text-abu mb-[20px] -tracking-widest'
+                            className='text-[18px] lg:text-[30px] font-700 font-bold text-abu mb-[20px] -tracking-widest'
                             duration={0.5}
                             delayMultiple={0.04}
                             switchInterval={3000} // Interval 3 detik sebelum berpindah ke kata berikutnya
@@ -112,7 +112,7 @@ const About = () => {
                 </div>
 
                 <div className='flex flex-col justify-center items-center mb-[130px]'>
-                    <div className='font-700 font-bold text-[35px] mb-[40px] text-abu'>
+                    <div className='font-700 font-bold sm:text-[35px] text-center text-[20px] mb-[40px] text-abu'>
                         <h1>
                             Companies I've Contributed To
                         </h1>

@@ -1,17 +1,38 @@
 import { CircleFadingPlus, Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const location = useLocation();
 
+    const [scrolling, setScrolling] = useState(false);
+
+    // Tambahkan event listener ketika komponen dimuat
+    useEffect(() => {
+        const handleScroll = () => {
+            // Periksa posisi scroll, jika lebih dari 50px, ubah state
+            if (window.scrollY > 50) {
+                setScrolling(true);
+            } else {
+                setScrolling(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Bersihkan event listener saat komponen di-unmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     // Helper function to determine if the menu is active
     const isActive = (path: string) => location.pathname === path;
 
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-white py-4 px-6 md:px-12 lg:px-24 shadow-md z-50">
+        <nav className={`fixed top-0 left-0 right-0 py-4 px-6 md:px-12 lg:px-24 shadow-md z-50 ${isActive('/') ? 'bg-white' : scrolling ? 'backdrop-blur' : 'bg-transparent'}`}>
             <div className="flex items-center justify-between">
                 {/* Logo */}
                 <a href="/" className="flex items-center gap-3">
@@ -46,8 +67,8 @@ const Navbar = () => {
                         <li className={`hover:text-yellow transition-all delay-50 ${isActive('/') ? 'text-yellow' : ''}`}>
                             <Link to="/">Home</Link>
                         </li>
-                        <li className={`hover:text-yellow pointer-events-none opacity-25 transition-all delay-75 ${isActive('/services') ? 'text-yellow' : ''}`}>
-                            <Link to="/services">Services</Link>
+                        <li className={`hover:text-yellow transition-all delay-75 ${isActive('/certificate') ? 'text-yellow' : ''}`}>
+                            <Link to="/certificate">Certificate</Link>
                         </li>
                         <li className={`hover:text-yellow transition-all delay-50 ${isActive('/projects') ? 'text-yellow' : ''}`}>
                             <Link to="/projects">Projects</Link>
@@ -56,7 +77,7 @@ const Navbar = () => {
                             <Link to="/about">About</Link>
                         </li>
                         <li>
-                            <a href="https://wa.me/081252896841" target='__blank'>
+                            <a href="https://wa.me/+6281252896841" target='__blank'>
                                 <Button>
                                     <CircleFadingPlus className="w-5 text-white" />
                                     <span>Hire Me</span>
