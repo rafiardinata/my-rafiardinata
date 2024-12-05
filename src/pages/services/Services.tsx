@@ -1,12 +1,12 @@
-import Footer from '@/components/Footer';
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import transition from '@/components/Transition';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import WordPullUp from '@/components/ui/word-pull-up';
-import { FileDown, Fullscreen } from 'lucide-react';
-import { useEffect } from 'react';
+import transition from '@/components/Transition'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
+import WordPullUp from '@/components/ui/word-pull-up'
+import { FileDown, Fullscreen } from 'lucide-react'
+import { useEffect } from 'react'
 
 const Services = () => {
 
@@ -56,7 +56,7 @@ const Services = () => {
     ]
 
     useEffect(() => {
-        document.title = "RAR | Services";
+        document.title = "RAR | Licenses & Certificate";
     })
 
     return (
