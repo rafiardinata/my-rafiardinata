@@ -48,7 +48,7 @@ const Home = () => {
                                     Creating user experience and visual appealing design
                                 </p>
                                 <div className='flex mt-5 sm:gap-5 gap-2'>
-                                    <a href="https://wa.me/081252896841" target='__blank'>
+                                    <a href="https://wa.me/+6281252896841" target='__blank'>
                                         <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2 border-2 sm:border-none rounded-lg'>
                                             <CircleFadingPlus className="w-5 text-white" />
                                             <span className='text-[11px] sm:text-[16px]'>Hire Me</span>

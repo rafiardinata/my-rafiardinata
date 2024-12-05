@@ -6,7 +6,6 @@ import WordPullUp from '@/components/ui/word-pull-up'
 import { ArrowRight } from 'lucide-react'
 import { useEffect } from 'react'
 
-
 const Projects = () => {
 
     const projects = [
@@ -99,7 +98,7 @@ const Projects = () => {
                         words="Project"
                     />
                     <p className='mt-[10px] font-semibold px-8 sm:px-0 text-center'>
-                        A collection of projects that reflect my skills and expertise.
+                        A collection of projects that reflect my skills and expertise
                     </p>
                 </header>
                 <div className='flex flex-wrap items-stretch justify-center mt-[40px] min-[560px]:px-[65px] px-[25px] gap-5 mb-[150px]'>
