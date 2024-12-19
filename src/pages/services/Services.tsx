@@ -66,7 +66,7 @@ const Services = () => {
             <main className='min-h-screen absolute w-full'>
                 <header className='flex flex-col font-700 justify-center items-center mt-[100px]'>
                     <WordPullUp
-                        className="text-[56px] font-bold -tracking-widest text-yellow dark:text-white sm:text-[65px]"
+                        className="text-[35px] sm:px-5 px-5 font-bold -tracking-widest text-yellow dark:text-white sm:text-[45px] md:text-[60px]"
                         words="Licenses & Certificate"
                     />
                     <p className='mt-[10px] font-semibold px-8 sm:px-0 text-center'>
@@ -74,9 +74,9 @@ const Services = () => {
                     </p>
                 </header>
                 <div className="max-w-[1100px] mx-auto mb-[100px]">
-                    <div className="grid grid-cols-3 mt-[40px] gap-4">
+                    <div className="flex flex-wrap justify-center sm:px-0 px-5 items-center mt-[40px] gap-4">
                         {data.map((value, i) => (
-                            <Card key={i} className="w-[350px] h-full flex flex-col justify-between">
+                            <Card key={i} className="w-[350px] h-[450px] flex flex-col justify-between">
                                 <CardHeader>
                                     <img
                                         src={value.src}
