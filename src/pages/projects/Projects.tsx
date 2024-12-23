@@ -29,6 +29,23 @@ const Projects = () => {
         },
 
         {
+            title: "JTV 2024",
+            deskripsi: "My Clients Project Personal",
+            gambar: "/images/JTV.png",
+            title_visit: "Visit Website | Soon",
+            title_visit_git: "GitHub",
+            web_link: "",
+            git_link: "",
+            tag: [
+                "ReactJs",
+                "TailwindCSS",
+                "Javascript",
+                "Magic UI",
+                "Shadcn UI",
+            ]
+        },
+
+        {
             title: "Perabot - Furniture Mobile Apps",
             deskripsi: "Personal Project",
             gambar: "/images/project2.jpg",
