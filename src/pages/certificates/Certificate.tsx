@@ -8,9 +8,16 @@ import WordPullUp from '@/components/ui/word-pull-up'
 import { FileDown, Fullscreen } from 'lucide-react'
 import { useEffect } from 'react'
 
-const Services = () => {
+const Certificate = () => {
 
     const data = [
+        {
+            src: "/images/certificate/react.png",
+            title: "Create Web Applications with React",
+            link_pdf: "/sertifikat_react.pdf",
+            preview: "Preview Certificate",
+            description: "IDCamp | 2024"
+        },
         {
             src: "/images/certificate/daspro.png",
             title: "Basic of Web Programming",
@@ -107,10 +114,15 @@ const Services = () => {
                                                 </DialogTitle>
                                             </DialogHeader>
                                             <iframe src={value.link_pdf} width="100%" height="600px"></iframe>
-                                            <Button className="max-w-[200px] mt-4">
-                                                <FileDown className="w-5 text-white" />
-                                                <span>Download My Certificate</span>
-                                            </Button>
+                                            <a
+                                                href={value.link_pdf}
+                                                target='__blank'
+                                            >
+                                                <Button className="max-w-[200px] mt-4">
+                                                    <FileDown className="w-5 text-white" />
+                                                    <span>Download My Certificate</span>
+                                                </Button>
+                                            </a>
                                         </DialogContent>
                                     </Dialog>
                                 </CardFooter>
@@ -125,4 +137,4 @@ const Services = () => {
     )
 }
 
-export default transition(Services);
+export default transition(Certificate);
