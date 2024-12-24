@@ -80,7 +80,7 @@ const Home = () => {
                                     <p className='text-secondary sm:text-[16px] text-[10px]'>My Projects Done</p>
                                 </div>
                                 <div className='font-700 font-semibold sm:w-64 w-40'>
-                                    <NumberTicker value={6} className='lg:text-[35px] text-[20px]' />
+                                    <NumberTicker value={8} className='lg:text-[35px] text-[20px]' />
                                     <span className='lg:text-[35px] text-[20px]'>+</span>
                                     <p className='text-secondary sm:text-[16px] text-[10px]'>Completed Licenses & Certifications</p>
                                 </div>

@@ -26,6 +26,13 @@ const Certificate = () => {
             description: "IDCamp | 2024"
         },
         {
+            src: "/images/certificate/toefl.png",
+            title: "English Proficiency Test of TOEFL - Score on 563",
+            link_pdf: "/TOEFL-EPT.pdf",
+            preview: "Preview Certificate",
+            description: "Webster English Course | 2024"
+        },
+        {
             src: "/images/certificate/javascript.png",
             title: "Basic of JavaScript Programming",
             link_pdf: "sertifikat_javascript.pdf",
@@ -88,7 +95,7 @@ const Certificate = () => {
                                     <img
                                         src={value.src}
                                         alt="Sertifikat"
-                                        className="w-full object-cover"
+                                        className="object-cover object-center w-full h-[200px]"
                                     />
                                 </CardHeader>
                                 <CardContent>
