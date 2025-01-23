@@ -3,10 +3,11 @@ import Gambar from '@/components/Gambar'
 import Navbar from '@/components/Navbar'
 import transition from '@/components/Transition'
 import { Button } from '@/components/ui/button'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import GradualSpacing from '@/components/ui/gradual-spacing'
 import NumberTicker from '@/components/ui/number-ticker'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-import { CircleFadingPlus, FileDown, PanelsTopLeft } from 'lucide-react'
+import { CircleFadingPlus, FileDown, Fullscreen, PanelsTopLeft } from 'lucide-react'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -16,7 +17,7 @@ const Home = () => {
         document.title = "Rafi Ardinata Riskiansyah";
     })
 
-    return (    
+    return (
         <>
             {/* Navbar */}
             <Navbar />
@@ -54,15 +55,35 @@ const Home = () => {
                                             <span className='text-[11px] sm:text-[16px]'>Hire Me</span>
                                         </Button>
                                     </a>
-                                    <a
-                                        href="/CV-New-Rafi Ardinata Riskiansyah.pdf"
-                                        download="CV-Rafi Ardinata Riskiansyah.pdf"
+                                    {/* <a
+                                        href="/Rafi Ardinata Riskiansyah-2025.pdf"
+                                        download="Rafi Ardinata Riskiansyah-2025.pdf"
                                     >
                                         <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
                                             <FileDown className="w-5 text-black" />
                                             <span className='text-[11px] sm:text-[16px]'>Download CV</span>
                                         </Button>
-                                    </a>
+                                    </a> */}
+                                    <Dialog>
+                                        <DialogTrigger asChild>
+                                            <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
+                                                <Fullscreen className='w-5 text-black' />
+                                                <span className='text-[11px] sm:text-[16px]'>Preview CV</span>
+                                            </Button>
+                                        </DialogTrigger>
+                                        <DialogContent aria-describedby="" className='max-w-[800px]'>
+                                            <DialogHeader>
+                                                <DialogTitle className='font-700'>
+                                                    My Resume
+                                                </DialogTitle>
+                                            </DialogHeader>
+                                            <iframe src="/Rafi Ardinata Riskiansyah-2025.pdf" width="100%" height="600px"></iframe>
+                                            <Button className='max-w-[200px] justify-center items-center'>
+                                                <FileDown className='w-5 text-white' />
+                                                <span>Download My CV</span>
+                                            </Button>
+                                        </DialogContent>
+                                    </Dialog>
                                     <Link to="/projects">
                                         <Button className='h-fit py-2 px-2 sm:h-10 sm:px-4 sm:py-2' variant="outline">
                                             <PanelsTopLeft className="w-5 text-black" />

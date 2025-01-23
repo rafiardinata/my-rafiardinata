@@ -1,13 +1,15 @@
 import About from "@/pages/about/About.tsx";
+import Certificate from "@/pages/certificates/Certificate";
 import Home from "@/pages/home/Home.tsx";
 import Projects from "@/pages/projects/Projects.tsx";
-import Services from "@/pages/certificates/Certificate";
+import Services from "@/pages/services/Index";
 import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
     { path: "/", element: <Home /> },
+    { path: "/services", element: <Services /> },
     { path: "/projects", element: <Projects /> },
-    { path: "/certificate", element: <Services /> },
+    { path: "/certificate", element: <Certificate /> },
     { path: "/about", element: <About /> },
 ], {
     basename: "/",
