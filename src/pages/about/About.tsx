@@ -94,7 +94,7 @@ const About = () => {
                                             My Resume
                                         </DialogTitle>
                                     </DialogHeader>
-                                    <iframe src="/CV-New-Rafi Ardinata Riskiansyah.pdf" width="100%" height="600px"></iframe>
+                                    <iframe src="/Rafi Ardinata Riskiansyah-2025.pdf" width="100%" height="600px"></iframe>
                                     <Button className='max-w-[200px] justify-center items-center'>
                                         <FileDown className='w-5 text-white' />
                                         <span>Download My CV</span>
