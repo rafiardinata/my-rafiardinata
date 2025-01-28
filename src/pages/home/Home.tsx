@@ -106,7 +106,7 @@ const Home = () => {
                                     <p className='text-secondary sm:text-[16px] text-[10px]'>Completed Licenses & Certifications</p>
                                 </div>
                                 <div className='font-700 font-semibold w-28'>
-                                    <NumberTicker value={2} className='lg:text-[35px] text-[20px]' />
+                                    <NumberTicker value={1} className='lg:text-[35px] text-[20px]' />
                                     <span className='lg:text-[35px] text-[20px]'>+</span>
                                     <p className='text-secondary sm:text-[16px] text-[10px]'>Years Experience</p>
                                 </div>
