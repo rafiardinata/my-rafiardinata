@@ -146,7 +146,7 @@ const Home = () => {
                         </div>
 
                         {/* Internship */}
-                        <div className='flex items-center gap-4'>
+                        {/* <div className='flex items-center gap-4'>
                             <TooltipProvider>
                                 <Tooltip delayDuration={200}>
                                     <TooltipTrigger>
@@ -168,7 +168,7 @@ const Home = () => {
                                 <p className='font-bold text-red-600'>Laboratory Active Talent - Design Graphic</p>
                                 <p className='text-secondary font-medium'>Position in Front End Developer</p>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Freelance */}
                         <div className='flex items-center gap-4'>
