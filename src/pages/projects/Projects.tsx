@@ -13,9 +13,9 @@ const Projects = () => {
             title: "Laboratory Information System Website",
             deskripsi: "Telkom University Surabaya",
             gambar: "/images/project1.png",
-            title_visit: "Visit Website | Soon",
+            title_visit: "Visit Website",
             title_visit_git: "GitHub",
-            web_link: "",
+            web_link: "https://lab.telu-sby.id/",
             git_link: "",
             tag: [
                 "Laravel",
