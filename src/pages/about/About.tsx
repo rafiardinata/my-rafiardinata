@@ -112,21 +112,34 @@ const About = () => {
                 </div>
 
                 <div className='flex flex-col justify-center items-center mb-[130px]'>
+                    {/* Judul */}
                     <div className='font-700 font-bold sm:text-[35px] text-center text-[20px] mb-[40px] text-abu'>
-                        <h1>
-                            Companies I've Contributed To
-                        </h1>
+                        <h1>Companies I've Contributed To</h1>
                     </div>
+
+                    {/* Kontainer */}
                     <div className='flex flex-wrap justify-center gap-8'>
+                        {/* Telkom University */}
                         <CardContainer className='h-full'>
-                            <CardBody className="bg-gray-50 relative flex flex-col justify-between group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-full rounded-xl p-6 border">
-                                <CardItem translateZ="100" className="w-full grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+                            <CardBody className="bg-white relative flex items-center justify-center group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-[200px] rounded-xl p-6 border">
+                                <CardItem translateZ="100" className="flex items-center justify-center grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
                                     <img
                                         src="/images/Telusby.png"
-                                        height="600"
-                                        width="600"
-                                        className="w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                                        alt="thumbnail"
+                                        className="w-[175px] object-contain rounded-xl"
+                                        alt="logo-telkom-university"
+                                    />
+                                </CardItem>
+                            </CardBody>
+                        </CardContainer>
+
+                        {/* Involuntir */}
+                        <CardContainer className='h-full'>
+                            <CardBody className="bg-white relative flex flex-col items-center justify-center group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-[200px] rounded-xl p-6 border">
+                                <CardItem translateZ="100" className="flex items-center justify-center">
+                                    <img
+                                        src="/images/invol.png"
+                                        className="w-[150px] object-contain rounded-xl"
+                                        alt="logo-involuntir"
                                     />
                                 </CardItem>
                             </CardBody>
