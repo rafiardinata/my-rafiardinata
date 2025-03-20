@@ -27,7 +27,7 @@ const Home = () => {
                     <div className='flex justify-between items-end'>
                         <div className='flex flex-col w-full'>
                             <div className='flex flex-col mt-16 gap-0'>
-                                <h1 className='xl:text-[130px] sm:text-[80px] text-[50px] font-700 font-bold text-yellow leading-none'>
+                                <h1 className='xl:text-[130px] sm:text-[80px] text-[40px] font-700 font-bold text-yellow leading-none'>
                                     Hi, I&apos;m Rafi
                                 </h1>
                                 <GradualSpacing
@@ -179,7 +179,7 @@ const Home = () => {
                                             <img
                                                 src="/images/vecteezy.png"
                                                 alt="Logo Tel-U"
-                                                className='hover:-translate-y-1 transition duration-400 w-[30px]'
+                                                className='hover:-translate-y-1 transition duration-400 w-[35px]'
                                             />
                                         </a>
                                     </TooltipTrigger>
@@ -192,6 +192,31 @@ const Home = () => {
                                 <p className='font-medium'>Currently Freelance in</p>
                                 <p className='font-bold text-yellow'>Vecteezy Contributor - Graphic Designer</p>
                                 <p className='text-secondary font-medium'>Jul 2024 - Present</p>
+                            </div>
+                        </div>
+
+                        {/* Internship */}
+                        <div className='flex items-center gap-4'>
+                            <TooltipProvider>
+                                <Tooltip delayDuration={200}>
+                                    <TooltipTrigger>
+                                        <a href="https://www.involuntir.com/" target='_blank'>
+                                            <img
+                                                src="/images/invol.png"
+                                                alt="Logo Tel-U"
+                                                className='hover:-translate-y-1 transition duration-400 w-[40px] rounded-full'
+                                            />
+                                        </a>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Telkom University Surabaya</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
+                            <div className='font-700 sm:text-[16px] text-[12px]'>
+                                <p className='font-medium'>Currently Internship in</p>
+                                <p className='font-bold text-blue-500'>Involuntir Surabaya</p>
+                                <p className='text-secondary font-medium'>Position in Front End Developer</p>
                             </div>
                         </div>
                     </div>
